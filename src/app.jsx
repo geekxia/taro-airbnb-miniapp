@@ -20,7 +20,11 @@ class App extends Component {
 
   config = {
     pages: [
-      'pages/index/index'
+      'pages/camera/camera',
+      'pages/star/star',
+      'pages/index/index',
+      'pages/message/message',
+      'pages/user/user'
     ],
     permission: {
       'scope.userLocation': {
@@ -31,7 +35,40 @@ class App extends Component {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
+      navigationBarTextStyle: 'black',
+      navigationStyle: 'custom'
+    },
+    tabBar: {
+      color: '#515151',
+      selectedColor: '#FF5A5F',
+      backgroundColor: '#ffffff',
+      borderStyle: 'black',
+      list: [
+        {
+          pagePath: 'pages/index/index',
+          text: '首页',
+          iconPath: 'assets/images/icon/a.png',
+          selectedIconPath: 'assets/images/icon/a-on.png'
+        },
+        {
+          pagePath: 'pages/star/star',
+          text: '收藏',
+          iconPath: 'assets/images/icon/b.png',
+          selectedIconPath: 'assets/images/icon/b-on.png'
+        },
+        {
+          pagePath: 'pages/message/message',
+          text: '消息',
+          iconPath: 'assets/images/icon/c.png',
+          selectedIconPath: 'assets/images/icon/c-on.png'
+        },
+        {
+          pagePath: 'pages/user/user',
+          text: '我的',
+          iconPath: 'assets/images/icon/d.png',
+          selectedIconPath: 'assets/images/icon/d-on.png'
+        }
+      ]
     }
   }
 
