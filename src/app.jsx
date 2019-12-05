@@ -20,9 +20,10 @@ class App extends Component {
 
   config = {
     pages: [
+      'pages/canvas/canvas',
+      'pages/index/index',
       'pages/camera/camera',
       'pages/star/star',
-      'pages/index/index',
       'pages/message/message',
       'pages/user/user'
     ],

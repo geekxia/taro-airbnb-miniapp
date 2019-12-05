@@ -20,6 +20,10 @@ const swiperArr = [
   }
 ]
 
+import ticketPng from './images/ticket.png'
+
+
 export {
-  swiperArr
+  swiperArr,
+  ticketPng
 }
